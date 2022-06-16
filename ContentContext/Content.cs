@@ -4,8 +4,7 @@ public abstract class Content
 {
     public Content()
     {
-        // Regra de negócio em um único local
-        Id = Guid.NewGuid(); // SPOF - Single Point of Failure
+        Id = Guid.NewGuid();
     }
 
     public Guid Id { get; set; }
