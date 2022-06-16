@@ -1,8 +1,14 @@
 namespace Fundamentos.ContentContext;
 
-public class Content
+public abstract class Content
 {
-    public int Id { get; set; }
+    public Content()
+    {
+        // Regra de negócio em um único local
+        Id = Guid.NewGuid(); // SPOF - Single Point of Failure
+    }
+
+    public Guid Id { get; set; }
     public string Title { get; set; }
     public string Url { get; set; }
 }
