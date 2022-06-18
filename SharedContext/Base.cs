@@ -1,6 +1,6 @@
 using Fundamentos.NotificationContext;
 
-namespace Fundamentos.ContentContext;
+namespace Fundamentos.SharedContext;
 
 public abstract class Base : Notifiable
 {

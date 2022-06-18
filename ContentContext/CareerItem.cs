@@ -1,4 +1,5 @@
 using Fundamentos.NotificationContext;
+using Fundamentos.SharedContext;
 
 namespace Fundamentos.ContentContext;
 

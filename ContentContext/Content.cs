@@ -1,3 +1,5 @@
+using Fundamentos.SharedContext;
+
 namespace Fundamentos.ContentContext;
 
 public abstract class Content : Base
