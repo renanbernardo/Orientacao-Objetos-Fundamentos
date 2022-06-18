@@ -1,3 +1,5 @@
+using Fundamentos.NotificationContext;
+
 namespace Fundamentos.ContentContext;
 
 public class CareerItem : Base
@@ -9,8 +11,8 @@ public class CareerItem : Base
         Course course)
     {
         if (course == null)
-            throw new Exception("O curso não pode ser nulo");
-            
+            AddNotification(new Notification("Course", "Curso inválido"));
+
         Order = order;
         Title = title;
         Description = description;
